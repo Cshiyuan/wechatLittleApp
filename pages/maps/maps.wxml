@@ -1,0 +1,38 @@
+<!-- map.wxml -->
+<!--22.543099 114.057868-->
+
+<view class="weui-cells__title">线路</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange" range="{{pickerArray}}" >
+              <view class="weui-input">{{pickerArray[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+<map id="map" 
+scale="13" 
+longitude="114.057868" 
+latitude="22.543099"
+controls="{{controls}}" 
+bindcontroltap="controltap" 
+markers="{{markers}}" 
+bindmarkertap="markertap" 
+polyline="{{polyline}}" 
+bindregionchange="regionchange" 
+show-location style="width: 100%; height: 400px;"
+include-points = "{{includePoints}}"
+>
+
+</map>
+
+
+
+
+
+    

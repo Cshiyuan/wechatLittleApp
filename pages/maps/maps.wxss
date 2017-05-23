@@ -1,0 +1,14 @@
+
+@import "/pages/common/lib/weui.wxss";
+.myMap {
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}
